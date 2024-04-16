@@ -1,0 +1,120 @@
+.tweet {
+    position: relative;
+    border-radius: 20px;
+    max-width: 500px;
+    min-width: 50%;
+    background-color: #e9ecefdd;
+    margin-bottom: 2em;
+
+}
+
+@media (max-width:800px) {
+    .tweet {
+        width: 90%;
+    }
+}
+
+.tweet h2 {
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.tweet button {
+    border-radius: 20px;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+
+body {
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#navbar,
+.nav-link {
+    background-color: #1DA1F2;
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    margin: 0.8em 0;
+    margin-left: 1.5em;
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+#tweetForm textarea {
+    width: 85%;
+    height: 3.5em;
+}
+
+#tweetForm button {
+    width: 15%;
+    background-color: #1DA1F2;
+}
+
+#tweetForm {
+    border: 2px solid #1DA1F2;
+}
+
+#tweetForm,
+#editForm {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 2px;
+    justify-content: center;
+
+}
+
+@media (max-width:600px) {
+    #tweetForm {
+        width: 100%;
+    }
+}
+
+.tweet.card:nth-last-of-type(1) {
+    margin-bottom: 7em;
+
+}
+
+#editForm {
+    box-sizing: border-box;
+    position: static;
+    margin: 1.5em;
+}
+
+#editForm button,
+#editForm textarea {
+    width: 100%;
+}

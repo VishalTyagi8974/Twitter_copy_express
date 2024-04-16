@@ -1,0 +1,20 @@
+<%- include("partials/head.ejs") %>
+
+    <body>
+        <%- include("partials/navbar.ejs") %>
+            <h1><i>Edit Tweet</i></h1>
+
+            <footer>
+                <h2 style="width: 100%;text-align: center;">
+                    user: <%=t.user%>
+                </h2>
+                <form action="/<%=t.id%>?_method=patch" method="post" id="editForm">
+                    <textarea name="tweet" id="" cols="30" rows="5"><%=t.content %>
+                </textarea>
+                    <button type="submit" class="btn btn-warning">Change</button>
+                </form>
+            </footer>
+
+    </body>
+
+    </html>

@@ -1,0 +1,33 @@
+<%- include("partials/head.ejs") %>
+
+    <body>
+        <%- include("partials/navbar.ejs") %>
+            <h1>tweets</h1>
+            <section>
+                <% for (let tweet of tweets){%>
+
+                    <div class="tweet card">
+                        <form action="/<%=tweet.id %>">
+                            <button type="submit">
+                                <h2>
+                                    <%=tweet.content%>
+                                </h2>
+                                <h3>
+                                    -<%=tweet.user%>
+                                </h3>
+                            </button>
+                    </div>
+
+                    </form>
+                    <% } %>
+            </section>
+            <footer>
+                <form id="tweetForm" action="/" method="post">
+                    <input type="text" name="user" placeholder="User Name" style="width: 100%; height: 1.8em;">
+                    <Textarea placeholder="Tweet Here" name="tweet"></Textarea>
+                    <button type="submit">Tweet</button>
+                </form>
+            </footer>
+    </body>
+
+    </html>
